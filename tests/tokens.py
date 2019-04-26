@@ -1,6 +1,5 @@
 from pygments.token import Token
 
-
 TOKENS = [
     (Token.Keyword.Reserved, 'const'),
     (Token.Text, ' '),
@@ -234,6 +233,7 @@ TOKENS = [
     (Token.Comment.Single, '// <p>Hello World!</p>\n'),
     (Token.Comment.Single, '// </div>\n'),
     (Token.Text, '\n'),
-    (Token.Comment.Multiline, '/*\n  Some comment. Tags shouldn\'t be lexed in here either\n  <div class="blog-body">\n  <h3>What\'s going on?</h3>\n  <p>Hello World!</p>\n  </div>\n*/'),
+    (Token.Comment.Multiline,
+     '/*\n  Some comment. Tags shouldn\'t be lexed in here either\n  <div class="blog-body">\n  <h3>What\'s going on?</h3>\n  <p>Hello World!</p>\n  </div>\n*/'),
     (Token.Text, '\n'),
 ]
